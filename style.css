@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(128, 128, 128, 0.14);
+    height: 100vh;
+    margin-top: 20px;
+}
+
+#container{
+    margin: 0 auto;
+    width: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+#container h1{
+    margin-top: 40px;
+    margin-bottom: -8px;
+    font-weight: 600;
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+form .input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#expense, #amount{
+    text-align: left;
+    width: 580px;
+    padding: 9px;
+    border: 1px solid rgba(128, 128, 128, 0.238);
+    border-radius: 5px;
+}
+
+#add-expense{
+    text-align: center;
+    width: 580px;
+    padding: 9px;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.84);
+    border: none;
+    border-radius: 5px;
+}
+
+#add-expense:hover{
+    background-color: rgba(0, 0, 255, 0.471);
+}
+
+.container h3{
+    display: block;
+    margin-right: 25px;
+    margin-left: auto;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#expense-list{
+    width: 580px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+#expense-list span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.list-of-expense{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    border: 2px solid transparent;
+    transition: 0.3s ease border;
+}
